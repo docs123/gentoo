@@ -196,7 +196,7 @@ systemd
 ```bash
 systemd-machine-id-setup
 hostnamectl set-hostname gentoo
-emerge -a networkmanager
+emerge -a networkmanager plasma-desktop
 ```
 ---
 
