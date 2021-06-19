@@ -104,13 +104,94 @@ Finally
 env-update && source /etc/profile && export PS1="(chroot) ${PS1}"
 ```
 
+## Kernel configuration
 
+Section: https://wiki.gentoo.org/wiki/Handbook:AMD64/Installation/Kernel
 
+Install precompiled distribution kernel
+```bash
+emerge --ask sys-kernel/gentoo-kernel-bin
+emerge -a linux-firmware
+emerge --config sys-kernel/gentoo-kernel-bin:5.10.38
+```
 
+## System configuration
+
+Section: https://wiki.gentoo.org/wiki/Handbook:AMD64/Installation/System
+
+fstab
+```bash
+nano -w /etc/fstab
+```
+
+Trying this out, the most minimal *working* setup possible, I think.
+```
+#<device>                                       <dir>   <type>  <options>       <dump>  <fsck>
+UUID="f279f7af-f31b-4318-9965-b973c159a3dd"     /       ext4    noatime,discard 0       1
+UUID="BB72-E032"                                /boot   vfat    defaults        0       2
+```
+
+```bash
+nano /etc/security/passwdqc.conf
+```
+Set `enforce` to `none`
+
+## System tools
+
+Section: https://wiki.gentoo.org/wiki/Handbook:AMD64/Installation/Tools
+
+```bash
+emerge -a cronie mlocate dosfstools
+```
+
+## Bootloader
+
+Section: https://wiki.gentoo.org/wiki/Handbook:AMD64/Installation/Bootloader
+
+GRUB
+```bash
+emerge --ask --verbose sys-boot/grub:2
+grub-install --target=x86_64-efi --efi-directory=/boot
+grub-mkconfig -o /boot/grub/grub.cfg
+```
+
+add user
+```bash
+useradd -m -G users,wheel,audio -s /bin/bash ismo
+passwd ismo
+```
+
+I really don't know what I'm doing at this point, fingers crossed.
+```bash
+emerge -a firefox-bin
+```
+
+Peace out
+```bash
+exit
+cd
+umount -l /mnt/gentoo/dev{/shm,/pts,}
+umount -R /mnt/gentoo
+reboot
+```
+
+---
+
+## ???
+
+systemd
+```bash
+systemd-machine-id-setup
+hostnamectl set-hostname gentoo
+emerge -a networkmanager
+```
 ---
 
 ## References
 
-Mastering Markdown: https://guides.github.com/features/mastering-markdown/
-Gentoo cheat sheet: https://wiki.gentoo.org/wiki/Gentoo_Cheat_Sheet
+Mastering Markdown: https://guides.github.com/features/mastering-markdown/  
+Gentoo cheat sheet: https://wiki.gentoo.org/wiki/Gentoo_Cheat_Sheet  
+EFI System Partition: https://forums.gentoo.org/viewtopic-t-1123855.html  
+EFI: https://wiki.gentoo.org/wiki/User:Sakaki/Sakaki%27s_EFI_Install_Guide/Final_Preparations_and_Reboot_into_EFI  
+Configuring systemd: https://wiki.gentoo.org/wiki/User:Sakaki/Sakaki%27s_EFI_Install_Guide/Configuring_systemd_and_Installing_Necessary_Tools
 
