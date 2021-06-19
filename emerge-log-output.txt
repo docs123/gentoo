@@ -1,0 +1,276 @@
+ * Messages for package sys-apps/systemd-248.3:
+
+ * Unable to find kernel sources at /usr/src/linux
+ * Unable to calculate Linux Kernel version for build, attempting to use running version
+ * Unable to check for the following kernel config options due
+ * to absence of any configured kernel sources or compiled
+ * config:
+ *  - AUTOFS4_FS
+ *  - BLK_DEV_BSG
+ *  - CGROUPS
+ *  - CHECKPOINT_RESTORE
+ *  - DEVTMPFS
+ *  - EPOLL
+ *  - FANOTIFY
+ *  - FHANDLE
+ *  - INOTIFY_USER
+ *  - IPV6
+ *  - NET
+ *  - NET_NS
+ *  - PROC_FS
+ *  - SIGNALFD
+ *  - SYSFS
+ *  - TIMERFD
+ *  - TMPFS_XATTR
+ *  - UNIX
+ *  - USER_NS
+ *  - CRYPTO_HMAC
+ *  - CRYPTO_SHA256
+ *  - CRYPTO_USER_API_HASH
+ *  - GRKERNSEC_PROC
+ *  - IDE
+ *  - SYSFS_DEPRECATED
+ *  - SYSFS_DEPRECATED_V2
+ *  - TMPFS_POSIX_ACL
+ *  - SECCOMP
+ *  - SECCOMP_FILTER
+ *  - CGROUP_BPF
+ * You're on your own to make sure they are set if needed.
+
+ * Messages for package sys-libs/gpm-1.20.7-r3:
+
+ * Unable to find kernel sources at /usr/src/linux
+ * Unable to calculate Linux Kernel version for build, attempting to use running version
+ * Unable to check for the following kernel config options due
+ * to absence of any configured kernel sources or compiled
+ * config:
+ *  - INPUT_MOUSEDEV - CONFIG_INPUT_MOUSEDEV:	is not set (required to expose mice for GPM)
+ * You're on your own to make sure they are set if needed.
+
+ * Messages for package sys-apps/portage-3.0.20-r1:
+
+ * Unable to find kernel sources at /usr/src/linux
+ * Unable to calculate Linux Kernel version for build, attempting to use running version
+ * Unable to check for the following kernel config options due
+ * to absence of any configured kernel sources or compiled
+ * config:
+ *  - IPC_NS
+ *  - PID_NS
+ *  - NET_NS
+ *  - UTS_NS
+ * You're on your own to make sure they are set if needed.
+
+ * Messages for package acct-group/polkitd-0-r1:
+
+ * Adding group 'polkitd' to your system ...
+ *  - Groupid: 102
+
+ * Messages for package acct-group/lpadmin-0-r1:
+
+ * Adding group 'lpadmin' to your system ...
+ *  - Groupid: 106
+
+ * Messages for package dev-libs/ell-0.40:
+
+ * Unable to find kernel sources at /usr/src/linux
+ * Unable to calculate Linux Kernel version for build, attempting to use running version
+ * Unable to check for the following kernel config options due
+ * to absence of any configured kernel sources or compiled
+ * config:
+ *  - TIMERFD
+ *  - EVENTFD
+ *  - CRYPTO_USER_API
+ *  - CRYPTO_USER_API_HASH
+ *  - CRYPTO_MD5
+ *  - CRYPTO_SHA1
+ *  - KEY_DH_OPERATIONS
+ * You're on your own to make sure they are set if needed.
+
+ * Messages for package acct-user/polkitd-0-r1:
+
+ * Adding user 'polkitd' to your system ...
+ *  - Userid: 102
+ *  - Shell: /sbin/nologin
+ *  - Home: /var/lib/polkit-1
+ *  - Groups: polkitd
+ *  - GECOS: added by portage for polkitd
+ * Updating comment for user 'polkitd' ...
+ *  - Comment: System user; polkitd
+
+ * Messages for package app-text/libpaper-1.1.24_p5:
+
+ * run e.g. "paperconfig -p letter" as root to use letter-pagesizes
+
+ * Messages for package media-fonts/urw-fonts-2.4.9:
+
+ * If you upgraded from urw-fonts-2.1-r2 some fonts will look a bit
+ * different. Take a look at bug #208990 if interested.
+
+ * Messages for package media-fonts/liberation-fonts-2.1.3:
+
+ * The following fontconfig configuration files have been installed:
+ * 
+ *   60-liberation.conf
+ * 
+ * Use `eselect fontconfig` to enable/disable them.
+
+ * Messages for package sys-libs/pam-1.5.1:
+
+ * Some software with pre-loaded PAM libraries might experience
+ * warnings or failures related to missing symbols and/or versions
+ * after any update. While unfortunate this is a limit of the
+ * implementation of PAM and the software, and it requires you to
+ * restart the software manually after the update.
+ * 
+ * You can get a list of such software running a command like
+ *   lsof / | egrep -i 'del.*libpam\.so'
+ * 
+ * Alternatively, simply reboot your system.
+
+ * Messages for package media-libs/fontconfig-2.13.1-r2:
+
+ * Please make fontconfig configuration changes using `eselect
+ * fontconfig`. Any changes made to /etc/fonts/fonts.conf will be
+ * overwritten. If you need to reset your configuration to upstream
+ * defaults, delete the directory /etc/fonts/conf.d/ and re-emerge
+ * fontconfig.
+ * 
+ * (Note: Above message is only printed the first time package is
+ * installed. Please look at /usr/share/doc/fontconfig-2.13.1-r2/README.gentoo*
+ * for future reference)
+
+ * Messages for package dev-python/mako-1.1.4:
+
+ * Install additional packages for optional runtime features:
+ *   dev-python/beaker for caching support
+
+ * Messages for package dev-libs/glib-2.68.2-r1:
+
+ * Unable to find kernel sources at /usr/src/linux
+ * Unable to calculate Linux Kernel version for build, attempting to use running version
+ * Unable to check for the following kernel config options due
+ * to absence of any configured kernel sources or compiled
+ * config:
+ *  - INOTIFY_USER
+ * You're on your own to make sure they are set if needed.
+
+ * Messages for package dev-qt/qtcore-5.15.2-r2:
+
+ * Unable to find kernel sources at /usr/src/linux
+ * Unable to calculate Linux Kernel version for build, attempting to use running version
+ * Generated gentoo-qconfig.h is empty
+
+ * Messages for package dev-qt/qtxml-5.15.2:
+
+ * Generated gentoo-qconfig.h is empty
+
+ * Messages for package dev-qt/qttest-5.15.2:
+
+ * Generated gentoo-qconfig.h is empty
+
+ * Messages for package sys-apps/dbus-1.12.20-r1:
+
+ * Unable to find kernel sources at /usr/src/linux
+ * Unable to calculate Linux Kernel version for build, attempting to use running version
+ * Unable to check for the following kernel config options due
+ * to absence of any configured kernel sources or compiled
+ * config:
+ *  - EPOLL
+ * You're on your own to make sure they are set if needed.
+
+ * Messages for package sys-devel/llvm-11.1.0:
+
+ * You can find additional opt-viewer utility scripts in:
+ *   /usr/lib/llvm/11/share/opt-viewer
+ * To use these scripts, you will need Python along with the following
+ * packages:
+ *   dev-python/pygments (for opt-viewer)
+ *   dev-python/pyyaml (for all of them)
+
+ * Messages for package dev-lang/spidermonkey-78.10.1:
+
+ * sys-devel/llvm:12 is missing! Cannot use LLVM slot 12 ...
+
+ * Messages for package media-libs/mesa-21.0.3:
+
+ * Unable to find kernel sources at /usr/src/linux
+ * Unable to calculate Linux Kernel version for build, attempting to use running version
+ * Unable to check for the following kernel config options due
+ * to absence of any configured kernel sources or compiled
+ * config:
+ *  - CHECKPOINT_RESTORE
+ * You're on your own to make sure they are set if needed.
+
+ * Messages for package sys-libs/gpm-1.20.7-r3:
+
+ * Unable to find kernel sources at /usr/src/linux
+ * Unable to calculate Linux Kernel version for build, attempting to use running version
+ * Unable to check for the following kernel config options due
+ * to absence of any configured kernel sources or compiled
+ * config:
+ *  - INPUT_MOUSEDEV - CONFIG_INPUT_MOUSEDEV:	is not set (required to expose mice for GPM)
+ * You're on your own to make sure they are set if needed.
+
+ * Messages for package net-print/cups-2.3.3_p2:
+
+ * Unable to find kernel sources at /usr/src/linux
+ * Unable to calculate Linux Kernel version for build, attempting to use running version
+ * Can't check the linux kernel configuration.
+ * You might have some incompatible options enabled.
+
+ * Messages for package net-wireless/bluez-5.58:
+
+ * Unable to find kernel sources at /usr/src/linux
+ * Unable to calculate Linux Kernel version for build, attempting to use running version
+ * Unable to check for the following kernel config options due
+ * to absence of any configured kernel sources or compiled
+ * config:
+ *  - NET
+ *  - BT
+ *  - BT_RFCOMM
+ *  - BT_RFCOMM_TTY
+ *  - BT_BNEP
+ *  - BT_BNEP_MC_FILTER
+ *  - BT_BNEP_PROTO_FILTER
+ *  - BT_HIDP
+ *  - RFKILL
+ *  - CRYPTO_USER
+ *  - CRYPTO_USER_API
+ *  - CRYPTO_USER_API_AEAD
+ *  - CRYPTO_USER_API_HASH
+ *  - CRYPTO_AES
+ *  - CRYPTO_CCM
+ *  - CRYPTO_AEAD
+ *  - CRYPTO_CMAC
+ * You're on your own to make sure they are set if needed.
+ * To use dial up networking you must install net-dialup/ppp
+ * Some example .json files were installed into
+ * /usr/share/doc/bluez-5.58 to be used with meshctl. Feel free to
+ * uncompress and copy them to ~/.config/meshctl to use them.
+ * 
+ * (Note: Above message is only printed the first time package is
+ * installed. Please look at /usr/share/doc/bluez-5.58/README.gentoo*
+ * for future reference)
+
+ * Messages for package x11-libs/gtk+-3.24.29:
+
+ * Please install app-text/evince for print preview functionality.
+ * Alternatively, check "gtk-print-preview-command" documentation and
+ * add it to your settings.ini file.
+
+ * Messages for package sys-apps/portage-3.0.20-r1:
+
+ * Unable to find kernel sources at /usr/src/linux
+ * Unable to calculate Linux Kernel version for build, attempting to use running version
+
+ * Messages for package dev-python/jinja-3.0.1:
+
+ * For i18n support, please emerge dev-python/Babel.
+>>> Auto-cleaning packages...
+
+>>> No outdated packages were found on your system.
+
+ * Regenerating GNU info directory index...
+ * Processed 99 info files.
+ * After world updates, it is important to remove obsolete packages with
+ * emerge --depclean. Refer to `man emerge` for more information.
