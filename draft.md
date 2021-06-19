@@ -1,6 +1,19 @@
+# Table of Contents
+
+* [Preparing the disks](#preparing-the-disks)
+* [Stage 3](#stage-3)
+* [Installing the Gentoo base system](#installing-the-gentoo-base-system)
+* [Kernel configuration](#kernel-configuration)
+* [System configuration](#system-configuration)
+* [System tools](#system-tools)
+* [Bootloader](#bootloader)
+* [References](#references)
+
+---
+
 Follow the guide: https://wiki.gentoo.org/wiki/Handbook:AMD64
 
-## Preparing the disks
+# Preparing the disks
 
 Section: https://wiki.gentoo.org/wiki/Handbook:AMD64/Installation/Disks
 
@@ -17,7 +30,7 @@ sudo mkdir /mnt/gentoo
 sudo mount /dev/sda2 /mnt/gentoo
 ```
 
-## Stage 3
+# Stage 3
 
 Section: https://wiki.gentoo.org/wiki/Handbook:AMD64/Installation/Stage
 
@@ -31,7 +44,7 @@ sudo nano -w etc/portage/make.conf
 Just add `-march=native` to `COMMON_FLAGS` and we're good to go  
 And set `-j2` for `MAKEOPTS`
 
-## Installing the Gentoo base system
+# Installing the Gentoo base system
 
 Section: https://wiki.gentoo.org/wiki/Handbook:AMD64/Installation/Base
 
@@ -104,7 +117,7 @@ Finally
 env-update && source /etc/profile && export PS1="(chroot) ${PS1}"
 ```
 
-## Kernel configuration
+# Kernel configuration
 
 Section: https://wiki.gentoo.org/wiki/Handbook:AMD64/Installation/Kernel
 
@@ -115,7 +128,7 @@ emerge -a linux-firmware
 emerge --config sys-kernel/gentoo-kernel-bin:5.10.38
 ```
 
-## System configuration
+# System configuration
 
 Section: https://wiki.gentoo.org/wiki/Handbook:AMD64/Installation/System
 
@@ -136,7 +149,7 @@ nano /etc/security/passwdqc.conf
 ```
 Set `enforce` to `none`
 
-## System tools
+# System tools
 
 Section: https://wiki.gentoo.org/wiki/Handbook:AMD64/Installation/Tools
 
@@ -144,7 +157,7 @@ Section: https://wiki.gentoo.org/wiki/Handbook:AMD64/Installation/Tools
 emerge -a cronie mlocate dosfstools
 ```
 
-## Bootloader
+# Bootloader
 
 Section: https://wiki.gentoo.org/wiki/Handbook:AMD64/Installation/Bootloader
 
