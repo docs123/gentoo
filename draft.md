@@ -5,7 +5,6 @@ Follow the guide: https://wiki.gentoo.org/wiki/Handbook:AMD64
 Section: https://wiki.gentoo.org/wiki/Handbook:AMD64/Installation/Disks
 
 GPT + UEFI, we want to keep it as close to defaults as possible
-
 ```bash
 sudo fdisk /dev/sda
 sudo mkfs.vfat -F 32 /dev/sda1
@@ -13,7 +12,6 @@ sudo mkfs.ext4 /dev/sda2
 ```
 
 Mount the partitions
-
 ```bash
 sudo mkdir /mnt/gentoo
 sudo mount /dev/sda2 /mnt/gentoo
@@ -44,7 +42,6 @@ sudo cp --dereference /etc/resolv.conf /mnt/gentoo/etc/
 ```
 
 mount
-
 ```bash
 sudo mount --types proc /proc /mnt/gentoo/proc
 sudo mount --rbind /sys /mnt/gentoo/sys
@@ -54,7 +51,6 @@ sudo mount --make-rslave /mnt/gentoo/dev
 ```
 
 chroot
-
 ```bash
 sudo chroot /mnt/gentoo /bin/bash
 source /etc/profile
@@ -64,7 +60,6 @@ export PS1="(chroot) ${PS1}"
 Now, time to work.  
 
 Set the desktop/plasma/systemd profile
-
 ```bash
 mount /dev/sda1 /boot
 emrerge-webrsync
@@ -75,7 +70,6 @@ eselect profile set 9
 ```
 
 And go to sleep ...
-
 ```bash
 emerge --ask --verbose --update --deep --newuse @world
 ```
