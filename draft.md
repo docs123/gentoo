@@ -48,3 +48,18 @@ chroot
     sudo chroot /mnt/gentoo /bin/bash
     source /etc/profile
     export PS1="(chroot) ${PS1}"
+
+Now time to work
+
+    mount /dev/sda1 /boot
+    emrerge-webrsync
+    eselect news list
+    eselect news read
+    eselect profile list
+    eselect profile set 9
+
+Set the desktop/plasma/systemd profile
+
+    emerge --ask --verbose --update --deep --newuse @world
+
+And go to sleep...
