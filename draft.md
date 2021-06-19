@@ -176,7 +176,7 @@ passwd ismo
 
 I really don't know what I'm doing at this point, fingers crossed.
 ```bash
-emerge -a firefox-bin
+emerge -a networkmanager plasma-desktop kdecore-meta firefox-bin qterminal
 ```
 
 Peace out
@@ -196,7 +196,6 @@ systemd
 ```bash
 systemd-machine-id-setup
 hostnamectl set-hostname gentoo
-emerge -a networkmanager plasma-desktop
 ```
 ---
 
