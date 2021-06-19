@@ -74,5 +74,43 @@ And go to sleep ...
 emerge --ask --verbose --update --deep --newuse @world
 ```
 
+Post emerge
+```bash
+emerge -a gentoolkit
+ln -sf ../usr/share/zoneinfo/Europe/Paris /etc/localtime
+nano -w /etc/locale.gen
+```
 
+Add the following
+```
+en_US.UTF-8 UTF-8
+fr_FR.UTF-8 UTF-8
+C.UTF8 UTF-8
+```
+
+Then
+```bash
+locale-gen
+locale -a
+eselect locale list
+eselect locale set 4
+```
+
+To manually set locale definitions edit `/etc/locale.conf`  
+See: https://wiki.gentoo.org/wiki/Localization/Guide
+
+Finally
+```bash
+env-update && source /etc/profile && export PS1="(chroot) ${PS1}"
+```
+
+
+
+
+---
+
+## References
+
+Mastering Markdown: https://guides.github.com/features/mastering-markdown/
+Gentoo cheat sheet: https://wiki.gentoo.org/wiki/Gentoo_Cheat_Sheet
 
