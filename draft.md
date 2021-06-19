@@ -168,15 +168,17 @@ grub-install --target=x86_64-efi --efi-directory=/boot
 grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
+I really don't know what I'm doing at this point, fingers crossed.
+```bash
+emerge -a networkmanager plasma-desktop kdecore-meta firefox-bin
+```
+
+Eventually get `qterminal`
+
 add user
 ```bash
 useradd -m -G users,wheel,audio -s /bin/bash ismo
 passwd ismo
-```
-
-I really don't know what I'm doing at this point, fingers crossed.
-```bash
-emerge -a networkmanager plasma-desktop kdecore-meta firefox-bin qterminal
 ```
 
 Peace out
@@ -196,6 +198,7 @@ systemd
 ```bash
 systemd-machine-id-setup
 hostnamectl set-hostname gentoo
+emerge -a plasma-meta
 ```
 ---
 
@@ -205,5 +208,5 @@ Mastering Markdown: https://guides.github.com/features/mastering-markdown/
 Gentoo cheat sheet: https://wiki.gentoo.org/wiki/Gentoo_Cheat_Sheet  
 EFI System Partition: https://forums.gentoo.org/viewtopic-t-1123855.html  
 EFI: https://wiki.gentoo.org/wiki/User:Sakaki/Sakaki%27s_EFI_Install_Guide/Final_Preparations_and_Reboot_into_EFI  
-Configuring systemd: https://wiki.gentoo.org/wiki/User:Sakaki/Sakaki%27s_EFI_Install_Guide/Configuring_systemd_and_Installing_Necessary_Tools
-
+Configuring systemd: https://wiki.gentoo.org/wiki/User:Sakaki/Sakaki%27s_EFI_Install_Guide/Configuring_systemd_and_Installing_Necessary_Tools  
+KDE on Gentoo: https://wiki.gentoo.org/wiki/KDE
