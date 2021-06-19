@@ -1,0 +1,65 @@
+* Messages for package sys-kernel/gentoo-kernel-bin-5.10.38:
+
+ * sys-kernel/linux-firmware not found installed on your system.
+ * This package provides various firmware files that may be needed
+ * for your hardware to work.  If in doubt, it is recommended
+ * to pause or abort the build process and install it before
+ * resuming.
+ * 
+ * If you decide to install linux-firmware later, you can rebuild
+ * the initramfs via issuing a command equivalent to:
+ * 
+ *     emerge --config sys-kernel/gentoo-kernel-bin:5.10.38
+
+ * Messages for package app-text/asciidoc-9.0.5-r1:
+
+ * If you are going to use a2x, please also look at a2x(1) under
+ * REQUISITES for a list of runtime dependencies.
+ * 
+ * (Note: Above message is only printed the first time package is
+ * installed. Please look at /usr/share/doc/asciidoc-9.0.5-r1/README.gentoo*
+ * for future reference)
+ * Install additional packages for optional runtime features:
+ *   media-sound/lilypond and media-gfx/imagemagick for "music" filter support
+ *   dev-util/source-highlight for "source" filter support
+ *   dev-python/pygments for "source" filter support
+ *   app-text/highlight for "source" filter support
+ *   dev-texlive/texlive-latex and app-text/dvipng for "latex" filter support
+ *   dev-texlive/texlive-latex and app-text/dvisvgm for "latex" filter support
+ *   media-gfx/graphviz for "graphviz" filter support
+
+ * Messages for package sys-kernel/dracut-053-r1:
+
+ * Unable to find kernel sources at /usr/src/linux
+ * Unable to calculate Linux Kernel version for build, attempting to use running version
+ * 
+ * Your kernel configuration couldn't be checked.
+ * Please check manually if following options are enabled:
+ * 
+ *   CONFIG_BLK_DEV_INITRD
+ *   CONFIG_DEVTMPFS
+ * 
+ * Install additional packages for optional runtime features:
+ *   net-misc/networkmanager for Networking support
+ *   app-benchmarks/bootchart2 for Measure performance of the boot process for later visualisation
+ *   app-admin/killproc for Measure performance of the boot process for later visualisation
+ *   sys-process/acct for Measure performance of the boot process for later visualisation
+ *   sys-fs/btrfs-progs for Scan for Btrfs on block devices
+ *   net-fs/cifs-utils for Support CIFS
+ *   sys-fs/cryptsetup[-static-libs] for Decrypt devices encrypted with cryptsetup/LUKS
+ *   app-shells/dash for Allows use of dash instead of default bash (on your own risk)
+ *   sys-block/open-iscsi for Support iSCSI
+ *   sys-fs/lvm2 for Support Logical Volume Manager
+ *   sys-fs/mdadm for Support MD devices, also known as software RAID devices
+ *   sys-fs/multipath-tools for Support Device Mapper multipathing
+ *   >=sys-boot/plymouth-0.8.5-r5 for Plymouth boot splash
+ *   sys-block/nbd for Support network block devices
+ *   net-fs/nfs-utils for Support NFS
+ *   net-nds/rpcbind for Support NFS
+ *   app-admin/rsyslog for Enable logging with rsyslog
+ *   sys-apps/rng-tools for Enable rngd service to help generating entropy early during boot
+>>> Auto-cleaning packages...
+
+>>> No outdated packages were found on your system.
+
+ * GNU info directory index is up-to-date.
