@@ -210,3 +210,4 @@ EFI System Partition: https://forums.gentoo.org/viewtopic-t-1123855.html
 EFI: https://wiki.gentoo.org/wiki/User:Sakaki/Sakaki%27s_EFI_Install_Guide/Final_Preparations_and_Reboot_into_EFI  
 Configuring systemd: https://wiki.gentoo.org/wiki/User:Sakaki/Sakaki%27s_EFI_Install_Guide/Configuring_systemd_and_Installing_Necessary_Tools  
 KDE on Gentoo: https://wiki.gentoo.org/wiki/KDE
+ccache: https://wiki.gentoo.org/wiki/Ccache
